@@ -10,10 +10,14 @@ pipeline {
             }
             steps {
                 sh '''
+                    ls -la
                     echo "Node Version:"
                     node -v
                     echo "Npm Version:"
                     npm -v
+                    npm ci
+                    npm run build
+                    ls -la
                 '''
             }
         }
