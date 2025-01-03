@@ -11,9 +11,9 @@ pipeline {
             steps {
                 sh '''
                     echo "Node Version:"
-                    node --v
+                    node -v
                     echo "Npm Version:"
-                    npm --v
+                    npm -v
                 '''
             }
         }
